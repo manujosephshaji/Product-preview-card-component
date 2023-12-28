@@ -1,0 +1,114 @@
+body {
+    background-color: hsl(30, 38%, 92%);
+    margin: 0%;
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    margin-top: 100px;
+    width: 38rem;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.product-img img {
+    border-radius: 15px 0px 0px 15px;
+    width: 19rem;
+    margin-right: 20px;
+}
+
+.product-details p:nth-child(1) {
+    letter-spacing: 2px;
+    font-family: 'Montserrat', sans-serif;
+    color: hsl(228, 12%, 48%);
+}
+
+.product-details p:nth-child(3) {
+    font-family: 'Montserrat', sans-serif;
+    color: hsl(228, 12%, 48%);
+    font-size: 15px;
+}
+
+h2 {
+    font-family: 'Fraunces', serif;
+    color: hsl(212, 21%, 14%);
+    font-size: 35px;
+}
+
+h1 {
+    display: inline-block;
+    font-family: 'Fraunces', serif;
+    color: hsl(158, 36%, 37%);
+    font-size: 34px;
+    margin: 10px 0px 8px 0px;
+}
+
+.product-details p:nth-child(5) {
+    display: inline-block;
+    font-family: 'Fraunces', serif;
+    margin-left: 5px;
+    text-decoration-line: line-through;
+    color: hsl(228, 12%, 48%)
+}
+
+button {
+    font-family: 'Montserrat', sans-serif;
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    padding: 16px 69px 19px 69px;
+    font-weight: 700;
+}
+
+button:hover {
+    transition: 0.5s;
+    background-color: hsl(158, 40%, 21%);
+}
+
+.attribution {
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.attribution a:hover {
+    color: black;
+}
+
+@media (max-width:660px) {
+    section {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .container {
+        display: flex;
+        margin-top: 25px;
+        flex-direction: column;
+        width: 21rem;
+    }
+    .product-details{
+        margin-left: 10px;
+    }
+    button {
+        padding: 16px 112px 19px 107px;
+        margin-bottom: 17px;
+    }
+
+    .product-img img {
+        width: 21rem;
+        border-radius: 15px 15px 0px 0px;
+    }
+    .attribution{
+        margin-top: 10px;
+    }
+}
